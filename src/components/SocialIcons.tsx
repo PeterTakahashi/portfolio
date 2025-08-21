@@ -29,7 +29,27 @@ export function LinkedInIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 export function QiitaIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
      <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-        
+      <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10c2.19 0 4.203-.702 5.834-1.889l2.055 2.055 1.414-1.414-2.026-2.026A9.96 9.96 0 0022 12c0-5.523-4.477-10-10-10zm0 2a8 8 0 110 16 8 8 0 010-16z" />
      </svg>
+  )
+}
+
+export function DevIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+      <path
+        fill="currentColor"
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="
+          M6 3h12a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3H6a3 3 0 0 1-3-3V6a3 3 0 0 1 3-3z
+          M6.8 8H9.7c2.2 0 3.5 1.6 3.5 4s-1.3 4-3.5 4H6.8V8z
+          M8.3 9.6v4.8h1.3c1.2 0 1.9-.9 1.9-2.4s-.7-2.4-1.9-2.4H8.3z
+          M14.3 8H19v2h-3v1.3h2.3v1.4H16V14h3v2h-4.7V8z
+          M17.8 8L19.5 16 21.2 8 19.9 8 19.5 9.7 19.1 8 17.8 8z
+          M18.4 9.6L19.5 14.2 20.6 9.6 18.4 9.6z
+        "
+      />
+    </svg>
   )
 }
