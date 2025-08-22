@@ -60,9 +60,17 @@ Card.Title = function CardTitle<T extends React.ElementType = 'h2'>({
 
   return (
     <Component className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
-      {
-        href ? (href.startsWith('https://') ? <Card.Link target='_blank' href={href}>{children}</Card.Link> : <Card.Link href={href}>{children}</Card.Link>) : children
-      }
+      {href ? (
+        href.startsWith('https://') ? (
+          <Card.Link target="_blank" href={href}>
+            {children}
+          </Card.Link>
+        ) : (
+          <Card.Link href={href}>{children}</Card.Link>
+        )
+      ) : (
+        children
+      )}
     </Component>
   )
 }

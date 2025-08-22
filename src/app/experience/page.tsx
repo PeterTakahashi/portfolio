@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function Experience() {
   return (
     <SimpleLayout
-      title='Experience'
+      title="Experience"
       intro="I am a software engineer who places particular emphasis on readability, scalability, high performance, and writing bug-free code. Having worked mainly at small companies, I have gained broad experience and am capable of handling the entire development cycle independently — from system design to implementation and testing."
     >
       <div className="space-y-20">

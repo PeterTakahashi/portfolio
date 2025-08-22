@@ -17,11 +17,11 @@ import { Container } from '@/components/Container'
 import avatarImage from '@/images/avatar.jpg'
 
 import {
-    CloseIcon,
-    ChevronDownIcon,
-    SunIcon,
-    MoonIcon,
-    MobileNavItem,
+  CloseIcon,
+  ChevronDownIcon,
+  SunIcon,
+  MoonIcon,
+  MobileNavItem,
 } from '@/components/Icons'
 
 function MobileNavigation(

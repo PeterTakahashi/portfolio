@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/Button'
 import { resume } from '@/data/resume'
 import { Role } from '@/components/Role'

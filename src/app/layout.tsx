@@ -8,8 +8,7 @@ import '@/styles/tailwind.css'
 export const metadata: Metadata = {
   title: {
     template: '%s - Seiya Takahashi',
-    default:
-      'Seiya Takahashi - Software Engineer',
+    default: 'Seiya Takahashi - Software Engineer',
   },
   description:
     'I’m Seiya Takahashi, a software engineer based in Tokyo, Japan. I’m mainly working on Rails web backend and React frontend, but I love to learn new things and try to build open source projects with Solidity, FastAPI, Python, SwiftUI, and more.',

@@ -1,7 +1,4 @@
-
-import {
-  PopoverButton,
-} from '@headlessui/react'
+import { PopoverButton } from '@headlessui/react'
 
 import Link from 'next/link'
 
@@ -82,7 +79,6 @@ function MobileNavItem({
   )
 }
 
-
 function BriefcaseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
     <svg
@@ -119,14 +115,12 @@ function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   )
 }
 
-
 export {
-    CloseIcon,
-    ChevronDownIcon,
-    SunIcon,
-    MoonIcon,
-    MobileNavItem,
-    BriefcaseIcon,
-    ArrowDownIcon,
+  CloseIcon,
+  ChevronDownIcon,
+  SunIcon,
+  MoonIcon,
+  MobileNavItem,
+  BriefcaseIcon,
+  ArrowDownIcon,
 }
-

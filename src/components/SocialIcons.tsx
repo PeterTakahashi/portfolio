@@ -28,9 +28,9 @@ export function LinkedInIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export function QiitaIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
-     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
+    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
       <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10c2.19 0 4.203-.702 5.834-1.889l2.055 2.055 1.414-1.414-2.026-2.026A9.96 9.96 0 0022 12c0-5.523-4.477-10-10-10zm0 2a8 8 0 110 16 8 8 0 010-16z" />
-     </svg>
+    </svg>
   )
 }
 

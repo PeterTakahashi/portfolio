@@ -32,7 +32,7 @@ export function Photos() {
         }
       `}</style>
       <div className="mt-16 sm:mt-20">
-        <div className="[--gap:5rem] overflow-hidden">
+        <div className="overflow-hidden [--gap:5rem]">
           <div className="scroller">
             <div className="animate-scroll flex min-w-full shrink-0 items-center justify-around gap-[var(--gap)]">
               {duplicatedImages.map((image, imageIndex) => (
