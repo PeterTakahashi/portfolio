@@ -35,7 +35,7 @@ export function Footer() {
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 <SocialLink
-                  href="https://github.com/spencerpaulsharp"
+                  href="https://github.com/PeterTakahashi/portfolio"
                   aria-label="GitHub Repository"
                   icon={GitHubIcon}
                 />
