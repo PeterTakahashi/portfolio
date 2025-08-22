@@ -31,7 +31,7 @@ export default function About() {
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I'm Seiya Takahashi. A software engineer based in Tokyo, Japan. Mainly working on rails web backend and react frontend. but I love to learn new things and try to build open source projects with Solidity, FastAPI, Python, SwiftUI, and more.
+              I&apos;m Seiya Takahashi. A software engineer based in Tokyo, Japan. Mainly working on rails web backend and react frontend. but I love to learn new things and try to build open source projects with Solidity, FastAPI, Python, SwiftUI, and more.
             </p>
             <p>
               I am a software engineer who places particular emphasis on readability, scalability, high performance, and writing bug-free code. Having worked mainly at small companies, I have gained broad experience and am capable of handling the entire development cycle independently — from system design to implementation and testing.
@@ -39,7 +39,7 @@ export default function About() {
             <p>
               I have been involved in more than 30 projects so far, and in most cases no bugs were reported after release.
               Although my English is not yet at a business level, I am able to communicate to some extent.
-              I'm still learning English, but I can read and write technical documents.
+              I&apos;m still learning English, but I can read and write technical documents.
             </p>
           </div>
         </div>
