@@ -88,7 +88,7 @@ export default function Experience() {
             href="#"
             title="Programming your company operating system"
             description="On the importance of creating systems and processes for running your business so that everyone on the team knows how to make the right decision no matter the situation."
-            event="How They Work Radio, September 2021"
+            event="How They Experience Radio, September 2021"
             cta="Listen to podcast"
           />
         </ExperienceSection>
