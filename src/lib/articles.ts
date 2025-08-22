@@ -5,6 +5,8 @@ interface Article {
   description: string
   author: string
   date: string
+  githubOwner: string
+  githubRepo: string
 }
 
 export interface ArticleWithSlug extends Article {

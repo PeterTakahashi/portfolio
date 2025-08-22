@@ -1,0 +1,20 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Seiya Takahashi',
+  date: '2025-02-22',
+  title: 'Ruby gem, Kaminari Tailwind',
+  description:
+    'a gem that provides a Tailwind CSS pagination template for Kaminari. It allows you to easily style pagination links in your Rails applications using Tailwind CSS.',
+  githubOwner: 'PeterTakahashi',
+  githubRepo: 'kaminari-tailwind'
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+https://github.com/PeterTakahashi/kaminari-tailwind

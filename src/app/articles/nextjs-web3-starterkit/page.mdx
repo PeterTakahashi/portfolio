@@ -1,0 +1,20 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Seiya Takahashi',
+  date: '2022-05-05',
+  title: "Next.js Starter Kit",
+  description:
+    'A boilerplate for building Next.js applications with TypeScript, Tailwind CSS, and other modern tools.',
+  githubOwner: 'Foxlottery',
+  githubRepo: 'nextjs-starterkit'
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+https://github.com/Foxlottery/nextjs-starterkit

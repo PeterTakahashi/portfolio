@@ -1,0 +1,22 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Seiya Takahashi',
+  date: '2025-05-25',
+  title: 'FastAPI Auth Starter Kit — Google & GitHub OAuth + React',
+  description:
+    "This is a starter project for building an AI web service with FastAPI and React. If you're using the fastapi-users library for authentication, you'll find there's a lot to set up: configuring APIs, setting up Google and GitHub OAuth, adding tests with pytest, setting up a code linter, and more. It can take a lot of time.",
+  githubOwner: 'PeterTakahashi',
+  githubRepo: 'service-base-auth-fastapi'
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+
+https://github.com/PeterTakahashi/service-base-auth-fastapi
+https://github.com/PeterTakahashi/service-base-auth-nextjs

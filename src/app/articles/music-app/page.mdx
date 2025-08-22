@@ -1,0 +1,20 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Seiya Takahashi',
+  date: '2022-06-26',
+  title: 'Music App, like Apple music',
+  description:
+    'A simple music app that clone Apple music, built with SwiftUI.',
+  githubOwner: 'outsource-systems',
+  githubRepo: 'music-app-ios'
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+https://github.com/outsource-systems/music-app-ios

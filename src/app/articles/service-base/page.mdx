@@ -1,0 +1,22 @@
+import { ArticleLayout } from '@/components/ArticleLayout'
+
+export const article = {
+  author: 'Seiya Takahashi',
+  date: '2025-06-30',
+  title: 'Service Base for Generative AI APIs — FastAPI & React',
+  description:
+    "A robust and scalable FastAPI boilerplate for building modern web services. This project provides foundational features for developing applications that require user authentication (including OAuth 2.0), API key management, wallet functionalities (with transactions). It integrates with Stripe for payment processing and can serve as a base for building services similar to generative AI APIs (like OpenAI or Gemini), combining aspects of API gateways (like Kong) and metering/wallet services (like OpenMeter).",
+  githubOwner: 'PeterTakahashi',
+  githubRepo: 'service-base-fastapi'
+}
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+}
+
+export default (props) => <ArticleLayout article={article} {...props} />
+
+
+https://github.com/PeterTakahashi/service-base-fastapi
+https://github.com/PeterTakahashi/service-base-react-vite

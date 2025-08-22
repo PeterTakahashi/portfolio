@@ -1,8 +1,7 @@
 import { Button } from '@/components/Button'
-import { Card } from '@/components/Card'
 import { Container } from '@/components/Container'
-import { type ArticleWithSlug, getAllArticles } from '@/lib/articles'
-import { formatDate } from '@/lib/formatDate'
+import { getAllArticles } from '@/lib/articles'
+import { Article } from '@/components/Article'
 
 import { SocialLinks } from '@/components/SocialLinks'
 
@@ -39,21 +38,6 @@ function ArrowDownIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
         strokeLinejoin="round"
       />
     </svg>
-  )
-}
-
-function Article({ article }: { article: ArticleWithSlug }) {
-  return (
-    <Card as="article">
-      <Card.Title href={`/articles/${article.slug}`}>
-        {article.title}
-      </Card.Title>
-      <Card.Eyebrow as="time" dateTime={article.date} decorate>
-        {formatDate(article.date)}
-      </Card.Eyebrow>
-      <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>Read article</Card.Cta>
-    </Card>
   )
 }
 
@@ -159,7 +143,7 @@ export default async function Home() {
             Software engineer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I'm Seiya Takahashi. A software engineer based in Tokyo, Japan. Mainly working on rails web backend and react frontend. but I love to learn new things and try to build open source projects with Solidity, FastAPI, Python, SwiftUI, and more.
+            I&apos;m Seiya Takahashi. A software engineer based in Tokyo, Japan. Mainly working on rails web backend and react frontend. but I love to learn new things and try to build open source projects with Solidity, FastAPI, Python, SwiftUI, and more.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLinks />
