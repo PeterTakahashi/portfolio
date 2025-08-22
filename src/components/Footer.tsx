@@ -1,6 +1,8 @@
 import Link from 'next/link'
 
 import { ContainerInner, ContainerOuter } from '@/components/Container'
+import { GitHubIcon } from '@/components/SocialIcons'
+import { SocialLink } from '@/components/SocialLink'
 
 function NavLink({
   href,
@@ -32,8 +34,11 @@ export function Footer() {
                 <NavLink href="/experience">Experience</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Spencer Sharp. All rights
-                reserved.
+                <SocialLink
+                  href="https://github.com/spencerpaulsharp"
+                  aria-label="GitHub Repository"
+                  icon={GitHubIcon}
+                />
               </p>
             </div>
           </ContainerInner>
