@@ -1,4 +1,5 @@
 
+import React from 'react'
 import { type Role } from '@/type/role'
 import { Card } from '@/components/Card'
 import { formatDate } from '@/lib/formatDate'
@@ -23,7 +24,23 @@ export function Experience({ role }: { role: Role }) {
           <span aria-hidden="true">—</span>{' '}
           <time dateTime={endDate}>{endLabel}</time>
         </Card.Eyebrow>
-        <Card.Description>{role.description}</Card.Description>
+        <Card.Description>
+          {typeof role.description === 'string'
+            ? role.description
+                .replace(/<br\s*\/?>(\n)?/gi, '\n')
+                .split(/\n/)
+                .map((line, idx, arr) =>
+                  idx < arr.length - 1 ? (
+                    <React.Fragment key={idx}>
+                      {line}
+                      <br />
+                    </React.Fragment>
+                  ) : (
+                    <React.Fragment key={idx}>{line}</React.Fragment>
+                  )
+                )
+            : role.description}
+        </Card.Description>
       </Card>
     </>
   )

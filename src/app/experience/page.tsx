@@ -1,6 +1,5 @@
 import { type Metadata } from 'next'
 
-import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import { Experience as ExperienceComponent } from '@/components/Experience'
 import { resume } from '@/data/resume'
@@ -8,14 +7,14 @@ import { resume } from '@/data/resume'
 export const metadata: Metadata = {
   title: 'Experience',
   description:
-    'I have experience in Rails web development and React for 8 years.',
+    'I am a software engineer who places particular emphasis on readability, scalability, high performance, and writing bug-free code. Having worked mainly at small companies, I have gained broad experience and am capable of handling the entire development cycle independently — from system design to implementation and testing.',
 }
 
 export default function Experience() {
   return (
     <SimpleLayout
       title='Experience'
-      intro="I have experience in Rails web development and React for 8 years. mainly I've worked as freelance developer."
+      intro="I am a software engineer who places particular emphasis on readability, scalability, high performance, and writing bug-free code. Having worked mainly at small companies, I have gained broad experience and am capable of handling the entire development cycle independently — from system design to implementation and testing."
     >
       <div className="space-y-20">
         {resume.map((role, roleIndex) => (
