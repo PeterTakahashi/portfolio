@@ -160,7 +160,7 @@ export default async function Home() {
             Software engineer
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I'm Seiya Takahashi. A software engineer based in Tokyo, Japan. Mainly working on rails web backend and react frontend. but I love to learn new things and try to build open source projects.
+            I'm Seiya Takahashi. A software engineer based in Tokyo, Japan. Mainly working on rails web backend and react frontend. but I love to learn new things and try to build open source projects with Solidity, FastAPI, Python, SwiftUI, and more.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLinks />
