@@ -1,65 +1,26 @@
 import { type Metadata } from 'next'
 
 import { Card } from '@/components/Card'
-import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
-
-function ExperienceSection({
-  children,
-  ...props
-}: React.ComponentPropsWithoutRef<typeof Section>) {
-  return (
-    <Section {...props}>
-      <div className="space-y-16">{children}</div>
-    </Section>
-  )
-}
-
-function Appearance({
-  title,
-  description,
-  event,
-}: {
-  title: string
-  description: string
-  event: string
-}) {
-  return (
-    <Card as="article">
-      <Card.Title as="h3">
-        {title}
-      </Card.Title>
-      <Card.Eyebrow decorate>{event}</Card.Eyebrow>
-      <Card.Description>{description}</Card.Description>
-    </Card>
-  )
-}
+import { Experience as ExperienceComponent } from '@/components/Experience'
+import { resume } from '@/data/resume'
 
 export const metadata: Metadata = {
   title: 'Experience',
   description:
-    'I’ve spoken at events all around the world and been interviewed for many podcasts.',
+    'I have experience in Rails web development and React for 8 years.',
 }
 
 export default function Experience() {
   return (
     <SimpleLayout
-      title="I’ve spoken at events all around the world and been interviewed for many podcasts."
-      intro="One of my favorite ways to share my ideas is live on stage, where there’s so much more communication bandwidth than there is in writing, and I love podcast interviews because they give me the opportunity to answer questions instead of just present my opinions."
+      title='Experience'
+      intro="I have experience in Rails web development and React for 8 years. mainly I've worked as freelance developer."
     >
       <div className="space-y-20">
-        <ExperienceSection title="Experience">
-          <Appearance
-            title="In space, no one can watch you stream — until now"
-            description="A technical deep-dive into HelioStream, the real-time streaming library I wrote for transmitting live video back to Earth."
-            event="SysConf 2021"
-          />
-          <Appearance
-            title="Lessons learned from our first product recall"
-            description="They say that if you’re not embarassed by your first version, you’re doing it wrong. Well when you’re selling DIY space shuttle kits it turns out it’s a bit more complicated."
-            event="Business of Startups 2020"
-          />
-        </ExperienceSection>
+        {resume.map((role, roleIndex) => (
+          <ExperienceComponent key={roleIndex} role={role} />
+        ))}
       </div>
     </SimpleLayout>
   )
